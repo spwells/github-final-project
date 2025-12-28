@@ -1,0 +1,38 @@
+
+(base) PS D:\github-final-project> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) PS D:\github-final-project> git branch bug-fix-typo
+(base) PS D:\github-final-project> git checkout bug-fix-typo
+Switched to branch 'bug-fix-typo' 
+(base) PS D:\github-final-project> cd D:\github-final-project\  
+
+(base) PS D:\\github-final-project> echo "This is a new addition to README.md on Dec 27th 2025" >> README.md 
+(base) PS D:\github-final-project> git add .
+(base) PS D:\github-final-project> git commit -am 'Adding additional comments to README.md'
+[bug-fix-typo 8082b92] Adding additional comments to README.md
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+(base) PS D:\github-final-project> git status
+On branch bug-fix-typo
+nothing to commit, working tree clean
+(base) PS D:\github-final-project> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) PS D:\github-final-project> git merge bug-fix-typo
+Updating aa5bd32..8082b92
+Fast-forward
+ README.md | Bin 157 -> 269 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+(base) PS D:\github-final-project> git branch
+  bug-fix-typo
+* main
+(base) PS D:\github-final-project> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+(base) PS D:\github-final-project> git push -u origin main
+To https://github.com/spwells/github-final-project.git
+ [accepted]        main -> main (fetch first)
