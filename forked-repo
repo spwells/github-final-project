@@ -1,0 +1,6 @@
+# Below shows the curl command used in ibm based terminal in the below lines and its terminal output following
+## theia@theia-sheetalpilla:/home/project$ curl -s https://api.github.com/repos/spwells/mcino-Introduction-to-Git-and-GitHub | jq -r '.parent.clone_url'
+## https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub.git
+
+theia@theia-sheetalpilla:/home/project$ curl -s https://api.github.com/repos/spwells/mcino-Introduction-to-Git-and-GitHub | jq -r '.parent.clone_url'
+https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub.git
